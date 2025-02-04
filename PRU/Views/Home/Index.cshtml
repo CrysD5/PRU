@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style="text-align: center; font-family: Arial, sans-serif; margin-top: 50px;">
+    <h1 style="font-size: 2.5em; color: #2C3E50;">Khadilkar Vidula MD</h1>
+    <br />
+    <p style="font-size: 1.2em; color: #34495E;">Welcome to Pediatrics R US!</p>
+    <p style="font-size: 1.1em; color: #7F8C8D;">
+        <strong>Address:</strong> 18660 Bagley Rd, Middleburg Heights, OH 44130<br>
+        <strong>Phone:</strong> (440)888-1500<br>
+        <strong>Hours:</strong> M - F 9:00 AM - 5:00 PM
+    </p>
+</div>
+
+@* <div class="text-center" style="margin-top: 20px;">
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Y8DKIHXudnBRWlyLGFrLr2dTDzz1wMuNMps02vOua9r8-zTMeP8b1wp5itSFtLobYb-1JAcMb?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+    <!-- end Google Calendar Appointment Scheduling -->
+</div> *@
+
+
+
+<div class="text-center" style="margin-top: 20px;">
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Y8DKIHXudnBRWlyLGFrLr2dTDzz1wMuNMps02vOua9r8-zTMeP8b1wp5itSFtLobYb-1JAcMb?gv=true',
+              color: '#F4511E',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+    </script>
+    <!-- end Google Calendar Appointment Scheduling -->
+</div>
+
+<div class="text-center" style="margin-top: 30px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5988.11452792179!2d-81.83475798884626!3d41.37284057118198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830eeb484fbfadd%3A0x19c3ebb3f0feda32!2sPediatrics%20R%20US%3A%20Khadilkar%20Vidula%20MD!5e0!3m2!1sen!2sus!4v1738605100497!5m2!1sen!2sus" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+
