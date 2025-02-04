@@ -18,7 +18,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: radial-gradient(circle at right top, #f1cfb461, #c8ebe573);
+    /*    background: linear-gradient(135deg, #d9d4ed 0%, #e9f3c6 100%)*/
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -28,4 +30,38 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+.about-container {
+    background-color: #ff7f500a;
+    padding: 20px;
+    color: #333;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #ff7f5047;
+}
+
+.grad1 {
+    height: 2px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-width: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.schoolbell-regular {
+    font-family: "Schoolbell", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.yomogi-regular {
+    font-family: "Yomogi", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 10px;
+    color: coral;
 }
