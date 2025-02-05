@@ -18,17 +18,41 @@
     <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
     <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <script>
-        (function() {
+        // (function() {
+        //   var target = document.currentScript;
+        //   window.addEventListener('load', function() {
+        //     calendar.schedulingButton.load({
+        //       url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Y8DKIHXudnBRWlyLGFrLr2dTDzz1wMuNMps02vOua9r8-zTMeP8b1wp5itSFtLobYb-1JAcMb?gv=true',
+        //       color: '#F4511E',
+        //       label: 'Book an appointment',
+        //       target,
+        //     });
+        //   });
+        // })();
+                (function() {
           var target = document.currentScript;
-          window.addEventListener('load', function() {
+
+          function loadSchedulingButton() {
             calendar.schedulingButton.load({
               url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Y8DKIHXudnBRWlyLGFrLr2dTDzz1wMuNMps02vOua9r8-zTMeP8b1wp5itSFtLobYb-1JAcMb?gv=true',
               color: '#F4511E',
               label: 'Book an appointment',
               target,
             });
+          }
+
+          window.addEventListener('load', function() {
+            loadSchedulingButton();
+
+            // Auto-refresh every 5 minutes (300,000 ms)
+            setInterval(function() {
+              target.innerHTML = ""; // Clear previous button
+              loadSchedulingButton(); // Reload the button
+            }, 300000); // Adjust the time if needed
           });
+
         })();
+
     </script>
     <!-- end Google Calendar Appointment Scheduling -->
 </div>
