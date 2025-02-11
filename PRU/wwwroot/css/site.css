@@ -20,7 +20,6 @@ html {
 body {
     margin-bottom: 60px;
     background: radial-gradient(circle at right top, #f1cfb461, #c8ebe573);
-    /*    background: linear-gradient(135deg, #d9d4ed 0%, #e9f3c6 100%)*/
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -41,6 +40,15 @@ body {
     border: 1px solid #ff7f5047;
 }
 
+.welcome-container {
+    background-color: #c8ebe573;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #aee8decf;
+}
+
 .grad1 {
     height: 2px;
     background-color: red; /* For browsers that do not support gradients */
@@ -50,10 +58,8 @@ body {
     margin-bottom: 0px;
 }
 
-.schoolbell-regular {
-    font-family: "Schoolbell", serif;
-    font-weight: 400;
-    font-style: normal;
+#footerLineHeight {
+    line-height: 40px;
 }
 
 .yomogi-regular {
@@ -65,3 +71,62 @@ body {
     padding-right: 10px;
     color: coral;
 }
+
+.tooltip-inner {
+    background-color: #F57C45 !important; /* Slightly lighter warm orange */
+    color: white !important;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 1px solid #F4511E; /* Matches booking button */
+}
+
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .tooltip-arrow::before {
+    border-top-color: #F57C45 !important;
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: #F57C45 !important;
+}
+
+.office-locations-container {
+    width: 900px;
+    margin: 0 auto; /* Centers the container */
+    text-align: center;
+    text-align: center;
+}
+
+.locations-title {
+    font-size: 36px;
+    color: #2C3E50; /* Dark blue-gray color for readability */
+    margin-bottom: 25px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.location {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.qxCTlb {
+    line-height: 45px;
+    width: 275px;
+}
+
+    .qxCTlb:hover {
+        background-color: #d84315;
+    }
+
+
+
+
+    
+

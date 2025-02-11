@@ -16,15 +16,15 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
             <div class="container-fluid">
-                <a class="yomogi-regular" asp-area="" asp-controller="Home" asp-action="Index"><strong>Pediatrics R Us</strong></a>
+                <a class="yomogi-regular" asp-area="" asp-controller="Home" asp-action="Index" title="Home"><strong>Pediatrics R Us</strong></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <li class="nav-item"> 
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> 
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">About Us</a>
@@ -43,7 +43,7 @@
 
     <footer class="border-top footer text-muted">
         <hr class="grad1" />
-        <div class="container">
+        <div id="footerLineHeight" class="container">
             &copy; 2025 - PRU - <a asp-area="" asp-controller="Home" asp-action="Privacy">About Us</a>
         </div>
     </footer>
@@ -51,5 +51,13 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
 </body>
 </html>
